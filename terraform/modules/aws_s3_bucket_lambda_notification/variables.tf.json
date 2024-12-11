@@ -1,0 +1,49 @@
+{
+  "variable": {
+    "bucket_arn": [
+      {
+        "description": "The ARN of the S3 bucket to associate with the Lambda function",
+        "nullable": false,
+        "type": "string"
+      }
+    ],
+    "bucket_name": [
+      {
+        "description": "The name of the S3 bucket to associate with the Lambda function",
+        "nullable": false,
+        "type": "string"
+      }
+    ],
+    "function_arn": [
+      {
+        "description": "The ARN of the Lambda function to associate with the S3 bucket",
+        "nullable": false,
+        "type": "string"
+      }
+    ],
+    "events": [
+      {
+        "description": "A list of S3 event types for which to invoke the Lambda function",
+        "nullable": false,
+        "type": "list(string)",
+        "default": ["s3:ObjectCreated:*"]
+      }
+    ],
+    "filter_prefix": [
+      {
+        "description": "The prefix of the S3 object keys for which to invoke the Lambda function",
+        "nullable": true,
+        "type": "string",
+        "default": ""
+      }
+    ],
+    "filter_suffix": [
+      {
+        "description": "The suffix of the S3 object keys for which to invoke the Lambda function",
+        "nullable": true,
+        "type": "string",
+        "default": ""
+      }
+    ]
+  }
+}
