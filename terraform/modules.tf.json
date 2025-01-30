@@ -1,0 +1,24 @@
+{
+  "module": {
+    "stackgen_37c2b353-d516-5004-a8ae-4e34661833c8": {
+      "name": "/aws/lambda/stackgen_2f8e50-function",
+      "retention_in_days": 7,
+      "source": "./modules/aws_cloudwatch_log_group",
+      "tags": {
+        "appstack": "eks-push-t0-github",
+        "component": "stackgen_2f8e50"
+      }
+    },
+    "stackgen_a5823e5c-54e8-4695-bf42-499d19009201": {
+      "assume_role_policy": null,
+      "description": null,
+      "force_detach_policies": true,
+      "inline_policy": [],
+      "name": "somevalue",
+      "source": "./modules/aws_iam_role",
+      "tags": {
+        "appstack": "eks-push-t0-github"
+      }
+    }
+  }
+}
