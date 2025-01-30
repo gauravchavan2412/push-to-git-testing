@@ -1,0 +1,22 @@
+{
+  "variable": {
+    "block_public_access": [
+      {
+        "default": true,
+        "description": "A state of block public access. If false, block public access is not enabled.",
+        "type": "bool",
+        "nullable": true,
+        "sensitive": false
+      }
+    ],
+    "bucket_name": [
+      {
+        "default": "default",
+        "description": "The name of the s3 bucket",
+        "type": "string",
+        "nullable": false,
+        "sensitive": false
+      }
+    ]
+  }
+}
