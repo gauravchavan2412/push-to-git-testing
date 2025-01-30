@@ -1,0 +1,13 @@
+{
+  "module": {
+    "stackgen_37c2b353-d516-5004-a8ae-4e34661833c8": {
+      "name": "/aws/lambda/stackgen_2f8e50-function",
+      "retention_in_days": 7,
+      "source": "./modules/aws_cloudwatch_log_group",
+      "tags": {
+        "appstack": "eks-push-t0-github",
+        "component": "stackgen_2f8e50"
+      }
+    }
+  }
+}
