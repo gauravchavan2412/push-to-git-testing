@@ -1,0 +1,39 @@
+{
+  "module": {
+    "stackgen_3db54b18-ccae-5b1e-8857-dea5570fcca3": {
+      "cpu_architecture": "X86_64",
+      "create_ingress_alb": true,
+      "ecs_cluster_name": "abhishes",
+      "ecs_service_desired_count": 1,
+      "ecs_service_name": "my-ecs-service",
+      "ecs_task_container_cpu": 256,
+      "ecs_task_container_memory": 512,
+      "ecs_task_container_name": "my-ecs-container",
+      "ecs_task_container_port": 80,
+      "ecs_task_image_url": "gururaj",
+      "environment_variables": {},
+      "health_check_path": "/",
+      "internal_alb": true,
+      "network_mode": "awsvpc",
+      "private_subnet_ids": [],
+      "protocol": "HTTP",
+      "public_subnet_ids": [],
+      "region": "${var.region}",
+      "source": "./modules/aws_ecs",
+      "tags": {
+        "appstack": "eks-push-t0-github",
+        "component": "stackgen_f79742"
+      },
+      "task_role_arn": ""
+    },
+    "stackgen_ea057d91-383c-57d2-8ad0-6bfde60e7515": {
+      "assume_role_policy": "{\n\t\t\"Version\": \"2012-10-17\",\n\t\t\"Statement\":{\n\t\t\t\t\"Action\": \"sts:AssumeRole\",\n\t\t\t\t\"Effect\": \"Allow\",\n\t\t\t\t\"Principal\": {\n\t\t\t\t\t\"Service\": \"ecs-tasks.amazonaws.com\"\n\t\t\t\t}\n\t\t\t}\n\t}",
+      "description": null,
+      "force_detach_policies": true,
+      "inline_policy": [],
+      "name": "stackgen_f79742-role",
+      "source": "./modules/aws_iam_role",
+      "tags": null
+    }
+  }
+}
