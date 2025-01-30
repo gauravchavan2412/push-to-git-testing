@@ -1,0 +1,18 @@
+{
+  "module": {
+    "stackgen_bd3447dc-a76a-426b-b8b0-560612bed0f9": {
+      "block_public_access": "${var.block_public_access}",
+      "bucket_name": "${var.bucket_name}",
+      "bucket_policy": "",
+      "enable_versioning": true,
+      "enable_website_configuration": false,
+      "source": "../base/modules/aws_s3",
+      "sse_algorithm": "aws:kms",
+      "tags": {
+        "appstack": "tags-object-issue"
+      },
+      "website_error_document": "404.html",
+      "website_index_document": "index.html"
+    }
+  }
+}
