@@ -1,0 +1,53 @@
+{
+  "module": {
+    "stackgen_37c2b353-d516-5004-a8ae-4e34661833c8": {
+      "name": "/aws/lambda/stackgen_2f8e50-function",
+      "retention_in_days": 7,
+      "source": "./modules/aws_cloudwatch_log_group",
+      "tags": {
+        "appstack": "eks-push-t0-github",
+        "component": "stackgen_2f8e50"
+      }
+    },
+    "stackgen_a5823e5c-54e8-4695-bf42-499d19009201": {
+      "assume_role_policy": null,
+      "description": null,
+      "force_detach_policies": true,
+      "inline_policy": [],
+      "name": "somevalue",
+      "source": "./modules/aws_iam_role",
+      "tags": {
+        "appstack": "eks-push-t0-github"
+      }
+    },
+    "stackgen_f0b4d00d-5431-5086-9a97-4c5fa25e77d2": {
+      "architecture": "x86_64",
+      "authorization_type": "NONE",
+      "cors": [],
+      "create_function_url": false,
+      "description": null,
+      "environment_variables": {},
+      "event_source_arn": null,
+      "event_source_mapping": [],
+      "filename": null,
+      "function_name": "stackgen_26cfaa-function",
+      "handler": "main.lambda_handler",
+      "image_uri": null,
+      "log_format": null,
+      "log_group_name": "",
+      "memory_size": 128,
+      "role": "qouihfiqniw",
+      "runtime": "python3.8",
+      "s3_bucket": null,
+      "s3_key": null,
+      "s3_object_version": null,
+      "source": "./modules/aws_lambda",
+      "system_log_level": null,
+      "tags": {
+        "appstack": "eks-push-t0-github",
+        "component": "stackgen_26cfaa"
+      },
+      "timeout": 3
+    }
+  }
+}
